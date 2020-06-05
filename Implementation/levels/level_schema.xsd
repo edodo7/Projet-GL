@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="color">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="red" />
+			<xsd:enumeration value="green" />
+			<xsd:enumeration value="blue" />
+			<xsd:enumeration value="null" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="orientation">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="north" />
+			<xsd:enumeration value="northeast" />
+			<xsd:enumeration value="southeast" />
+			<xsd:enumeration value="south" />
+			<xsd:enumeration value="southwest" />
+			<xsd:enumeration value="northwest" />
+		</xsd:restriction>
+	</xsd:simpleType>
+		
+	<xsd:complexType name="block">
+		<xsd:attribute name="fixedposition" type="xsd:boolean" default="false" />
+		<xsd:attribute name="fixedorientation" type="xsd:boolean" default="false"/>
+		<xsd:attribute name="orientation" type="orientation" default="north" />
+	</xsd:complexType>
+	
+	<xsd:element name="empty">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="source">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="red" type="xsd:boolean" default="true" />
+					<xsd:attribute name="green" type="xsd:boolean" default="true" />
+					<xsd:attribute name="blue" type="xsd:boolean" default="true" />
+					<xsd:attribute name="intensity" type="xsd:float" default="1.0" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="target">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="wall">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:simpleType name="mirror-kind">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1-way" />
+			<xsd:enumeration value="2-way" />
+			<xsd:enumeration value="3-way" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:element name="mirror">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="kind" type="mirror-kind" use="required" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+		
+	<xsd:element name="splitter">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="way" type="xsd:int" use="required" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="filter">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="red" type="xsd:boolean" default="false" />
+					<xsd:attribute name="green" type="xsd:boolean" default="false" />
+					<xsd:attribute name="blue" type="xsd:boolean" default="false" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="converter">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="color" type="color" use="required" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="gate">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="genericbridge">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="northgate" type="xsd:boolean" default="false" />
+					<xsd:attribute name="northeastgate" type="xsd:boolean" default="false" />
+					<xsd:attribute name="southeastgate" type="xsd:boolean" default="false" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="specificbridge">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block">
+					<xsd:attribute name="northgate" type="color" default="null" />
+					<xsd:attribute name="northeastgate" type="color" default="null" />
+					<xsd:attribute name="southeastgate" type="color" default="null" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="amplifier">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="reducer">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="block" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:group name="hexagon">
+		<xsd:choice>
+			<xsd:element ref="empty" />
+			<xsd:element ref="source" />
+			<xsd:element ref="target" />
+			<xsd:element ref="wall" />
+			<xsd:element ref="mirror" />
+			<xsd:element ref="splitter" />
+			<xsd:element ref="filter" />
+			<xsd:element ref="converter" />
+			<xsd:element ref="gate" />
+			<xsd:element ref="genericbridge" />
+			<xsd:element ref="specificbridge" />
+			<xsd:element ref="amplifier" />
+			<xsd:element ref="reducer" />
+		</xsd:choice>
+	</xsd:group>
+	
+	<xsd:group name="modifier">
+		<xsd:choice>
+			<xsd:element ref="filter" />
+			<xsd:element ref="converter" />
+			<xsd:element ref="amplifier" />
+			<xsd:element ref="reducer" />
+		</xsd:choice>
+	</xsd:group>
+	
+	<xsd:element name="grid">
+		<xsd:complexType>
+			<xsd:attribute name="width" type="xsd:int" use="required" />
+			<xsd:attribute name="height" type="xsd:int" use="required" />
+			<xsd:attribute name="fill" type="xsd:boolean" default="false" />
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="position">
+		<xsd:attribute name="x" type="xsd:int" use="required" />
+		<xsd:attribute name="y" type="xsd:int" use="required" />
+	</xsd:complexType>
+	
+	<xsd:complexType name="hexagonposition">
+		<xsd:complexContent>
+			<xsd:extension base="position">
+				<xsd:sequence>
+					<xsd:group ref="hexagon" />
+					<xsd:group ref="modifier" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="constraintposition">
+		<xsd:complexContent>
+			<xsd:extension base="position">
+				<xsd:group ref="hexagon" />
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:element name="blocks">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="position" type="hexagonposition" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>	
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="constraints">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="position" type="constraintposition" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="container">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:group ref="hexagon" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="level">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="grid" />
+				<xsd:element ref="blocks" />
+				<xsd:element ref="constraints" />
+				<xsd:element ref="container" />
+			</xsd:sequence>
+			<xsd:attribute name="name" type="xsd:string" use="required" />
+			<xsd:attribute name="map" type="xsd:string" use="required" />
+			<xsd:attribute name="difficulty" type="xsd:string" use="required" />
+			<xsd:attribute name="timer" type="xsd:int" use="required" />
+			<xsd:attribute name="color" type="xsd:boolean" default="true" />
+			<xsd:attribute name="intensity" type="xsd:boolean" default="true" />
+			<xsd:attribute name="level_checker" type="xsd:boolean" default="true" />
+			<xsd:attribute name="editor" type="xsd:boolean" default="true" />
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,71 @@
+<level name="Exemple" map="g3_15.tmx" difficulty="medium" timer="60" color="false" intensity="false">
+	<grid width="4" height="5" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<empty/>
+		</position>
+		<position x="1" y="0">
+			<empty/>
+		</position>
+		<position x="2" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="north" red="true" green="true" blue="true"/>
+		</position>
+		<position x="3" y="0">
+			<empty/>
+		</position>
+		<position x="0" y="1">
+			<empty/>
+		</position>
+		<position x="1" y="1">
+			<empty/>
+		</position>
+		<position x="2" y="1">
+			<empty/>
+		</position>
+		<position x="3" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<empty/>
+		</position>
+		<position x="1" y="2">
+			<empty/>
+		</position>
+		<position x="2" y="2">
+			<wall fixedposition="true" fixedorientation="true"/>
+		</position>
+		<position x="3" y="2">
+			<empty/>
+		</position>
+		<position x="0" y="3">
+			<empty/>
+		</position>
+		<position x="1" y="3">
+			<empty/>
+		</position>
+		<position x="2" y="3">
+			<empty/>
+		</position>
+		<position x="3" y="3">
+			<empty/>
+		</position>
+		<position x="0" y="4">
+			<empty/>
+		</position>
+		<position x="1" y="4">
+			<empty/>
+		</position>
+		<position x="2" y="4">
+			<target fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+		<position x="3" y="4">
+			<empty/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container>
+		<mirror kind="1-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="2-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="3-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+	</container>
+</level>

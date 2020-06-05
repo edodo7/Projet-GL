@@ -1,0 +1,64 @@
+<level name="Crossing" map="g3_05.tmx" difficulty="easy" timer="30" color="true" intensity="true">
+	<grid width="5" height="5" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="northeast" red="true" green="true" blue="true"/>
+		</position>
+		<position x="2" y="0">
+			<empty/>
+		</position>
+		<position x="3" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="northwest" red="true" green="true" blue="true"/>
+		</position>
+		<position x="4" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="northwest" red="true" green="true" blue="true"/>
+		</position>
+		<position x="1" y="1">
+			<empty/>
+		</position>
+		<position x="2" y="1">
+			<empty/>
+		</position>
+		<position x="3" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<source fixedposition="true" fixedorientation="true" orientation="southeast" red="true" green="true" blue="true"/>
+		</position>
+		<position x="1" y="2">
+			<empty/>
+		</position>
+		<position x="2" y="2">
+			<empty/>
+		</position>
+		<position x="3" y="2">
+			<empty/>
+		</position>
+		<position x="4" y="2">
+			<target fixedposition="true" fixedorientation="true" orientation="southwest"/>
+		</position>
+		<position x="1" y="3">
+			<source fixedposition="true" fixedorientation="true" orientation="southeast" red="true" green="true" blue="true"/>
+		</position>
+	</blocks>
+	<constraints>
+		<position x="3" y="1">
+			<filter red="false" blue="false" green="true" fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		</position>
+		<position x="1" y="2">
+			<reducer fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		</position>
+		<position x="2" y="2">
+			<filter red="true" blue="false" green="false" fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		</position>
+	</constraints>
+	<container>
+		<wall fixedposition="false" fixedorientation="false"/>
+		<reducer fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		<reducer fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		<filter red="false" blue="true" green="true" fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		<filter red="true" blue="false" green="false" fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		<filter red="false" blue="false" green="true" fixedposition="false" fixedorientation="true" orientation="southeast"/>
+		<filter red="true" blue="true" green="false" fixedposition="false" fixedorientation="true" orientation="southeast"/>
+	</container>
+</level>

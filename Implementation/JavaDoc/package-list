@@ -1,0 +1,10 @@
+be.ac.umons
+be.ac.umons.controller
+be.ac.umons.game
+be.ac.umons.gui
+be.ac.umons.model
+be.ac.umons.model.hexagon
+be.ac.umons.model.levelChecker
+be.ac.umons.model.xml
+be.ac.umons.util
+be.ac.umons.view

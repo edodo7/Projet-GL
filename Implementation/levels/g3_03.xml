@@ -1,0 +1,40 @@
+<level name="Detour" map="g3_03.tmx" difficulty="easy" timer="30" color="false" intensity="false">
+	<grid width="3" height="4" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<empty/>
+		</position>
+		<position x="1" y="0">
+			<empty/>
+		</position>
+		<position x="2" y="0">
+			<empty/>
+		</position>
+		<position x="0" y="1">
+			<empty/>
+		</position>
+		<position x="1" y="1">
+			<source fixedposition="true" fixedorientation="true" orientation="north" red="true" green="true" blue="true"/>
+		</position>
+		<position x="2" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<empty/>
+		</position>
+		<position x="1" y="2">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="northeast"/>
+		</position>
+		<position x="1" y="3">
+			<target fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container>
+		<mirror kind="3-way" fixedposition="false" fixedorientation="false" orientation="northeast"/>
+		<mirror kind="1-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="1-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="1-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="1-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+	</container>
+</level>

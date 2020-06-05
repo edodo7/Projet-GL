@@ -1,0 +1,67 @@
+<level name="Need for reflection" map="g3_08.tmx" difficulty="medium" timer="10" color="false" intensity="false">
+	<grid width="4" height="5" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<empty/>
+		</position>
+		<position x="1" y="0">
+			<empty/>
+		</position>
+		<position x="2" y="0">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="0">
+			<empty/>
+		</position>
+		<position x="0" y="1">
+			<source fixedposition="true" fixedorientation="true" orientation="southeast"/>
+		</position>
+		<position x="1" y="1">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="northeast"/>
+		</position>
+		<position x="2" y="1">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="northeast"/>
+		</position>
+		<position x="3" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<empty/>
+		</position>
+		<position x="1" y="2">
+			<empty/>
+		</position>
+		<position x="2" y="2">
+			<empty/>
+		</position>
+		<position x="3" y="2">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="false" orientation="southwest"/>
+		</position>
+		<position x="0" y="3">
+			<empty/>
+		</position>
+		<position x="1" y="3">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="false" orientation="southwest"/>
+		</position>
+		<position x="2" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="3">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="false" orientation="southwest"/>
+		</position>
+		<position x="0" y="4">
+			<empty/>
+		</position>
+		<position x="1" y="4">
+			<empty/>
+		</position>
+		<position x="2" y="4">
+			<empty/>
+		</position>
+		<position x="3" y="4">
+			<target fixedposition="true" fixedorientation="true" orientation="southwest"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container/>
+</level>

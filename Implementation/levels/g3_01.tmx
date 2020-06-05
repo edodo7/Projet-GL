@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="hexagonal" renderorder="right-down" width="3" height="4" tilewidth="148" tileheight="128" hexsidelength="74" staggeraxis="x" staggerindex="odd" nextobjectid="1">
+ <tileset firstgid="1" source="TileSet.tsx"/>
+ <layer name="Calque de Tile 1" width="3" height="4">
+  <data encoding="csv">
+2,2,2,
+2,2,2,
+2,2,2,
+2,2,2
+</data>
+ </layer>
+</map>

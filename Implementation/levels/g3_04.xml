@@ -1,0 +1,70 @@
+<level name="Intense" map="g3_04.tmx" difficulty="easy" timer="30" color="true" intensity="true">
+	<grid width="4" height="5" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<empty/>
+		</position>
+		<position x="1" y="0">
+			<empty/>
+		</position>
+		<position x="2" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="3" y="0">
+			<empty/>
+		</position>
+		<position x="0" y="1">
+			<empty/>
+		</position>
+		<position x="1" y="1">
+			<empty/>
+		</position>
+		<position x="2" y="1">
+			<splitter way="5" fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+		<position x="3" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="false" orientation="northeast"/>
+		</position>
+		<position x="1" y="2">
+			<empty/>
+		</position>
+		<position x="2" y="2">
+			<genericbridge fixedposition="true" fixedorientation="true" orientation="north" northgate="true" northeastgate="true" southeastgate="true"/>
+		</position>
+		<position x="3" y="2">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="0" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="northeast"/>
+		</position>
+		<position x="1" y="3">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="3">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="southeast"/>
+		</position>
+		<position x="3" y="3">
+			<empty/>
+		</position>
+		<position x="0" y="4">
+			<empty/>
+		</position>
+		<position x="1" y="4">
+			<empty/>
+		</position>
+		<position x="2" y="4">
+			<target fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+		<position x="3" y="4">
+			<target fixedposition="true" fixedorientation="true" orientation="southwest"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container>
+		<amplifier/>
+		<reducer/>
+	</container>
+</level>

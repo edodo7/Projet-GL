@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<level name="Curve" map="g3_01.tmx" difficulty="easy" timer="20" color="false" intensity="false" >
+	<grid width="3" height="4"  fill="true" />
+	
+	<blocks>
+		<position x="0" y="0">
+			<source fixedposition="true" fixedorientation="false" orientation="north" />
+		</position>
+		<position x="2" y="0">
+			<target fixedposition="true" fixedorientation="false" orientation="north" />
+		</position>
+		<position x="1" y="0">
+			<wall fixedposition="true" fixedorientation="true" />
+		</position>
+		<position x="1" y="1">
+			<wall fixedposition="true" fixedorientation="true" />
+		</position>
+		<position x="1" y="2">
+			<wall fixedposition="true" fixedorientation="true" />
+		</position>
+		<position x="0" y="3">
+			<mirror kind="2-way" orientation="southeast" />
+		</position>
+		<position x="2" y="3">
+			<mirror kind="2-way" orientation="northeast" />
+		</position>
+	</blocks>
+	
+	<constraints>
+	</constraints>
+	
+	<container>
+		<mirror kind="2-way" />
+	</container>
+</level>

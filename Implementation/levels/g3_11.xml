@@ -1,0 +1,159 @@
+<level name="Splitted" map="g3_11.tmx" difficulty="hard" timer="180" color="true" intensity="false">
+	<grid width="7" height="7" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="0">
+			<empty/>
+		</position>
+		<position x="2" y="0">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="0">
+			<empty/>
+		</position>
+		<position x="4" y="0">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="5" y="0">
+			<empty/>
+		</position>
+		<position x="6" y="0">
+			<empty/>
+		</position>
+		<position x="0" y="1">
+			<empty/>
+		</position>
+		<position x="1" y="1">
+			<empty/>
+		</position>
+		<position x="2" y="1">
+			<empty/>
+		</position>
+		<position x="3" y="1">
+			<empty/>
+		</position>
+		<position x="4" y="1">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="5" y="1">
+			<empty/>
+		</position>
+		<position x="6" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="2">
+			<empty/>
+		</position>
+		<position x="2" y="2">
+			<empty/>
+		</position>
+		<position x="3" y="2">
+			<empty/>
+		</position>
+		<position x="4" y="2">
+			<empty/>
+		</position>
+		<position x="5" y="2">
+			<empty/>
+		</position>
+		<position x="6" y="2">
+			<empty/>
+		</position>
+		<position x="0" y="3">
+			<empty/>
+		</position>
+		<position x="1" y="3">
+			<empty/>
+		</position>
+		<position x="2" y="3">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="3">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="4" y="3">
+			<empty/>
+		</position>
+		<position x="5" y="3">
+			<empty/>
+		</position>
+		<position x="6" y="3">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="4">
+			<source fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="1" y="4">
+			<empty/>
+		</position>
+		<position x="2" y="4">
+			<empty/>
+		</position>
+		<position x="3" y="4">
+			<empty/>
+		</position>
+		<position x="4" y="4">
+			<genericbridge fixedposition="true" fixedorientation="true" orientation="northeast" northgate="false" northeastgate="true" southeastgate="true"/>
+		</position>
+		<position x="5" y="4">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="6" y="4">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="5">
+			<empty/>
+		</position>
+		<position x="1" y="5">
+			<empty/>
+		</position>
+		<position x="2" y="5">
+			<empty/>
+		</position>
+		<position x="3" y="5">
+			<empty/>
+		</position>
+		<position x="4" y="5">
+			<genericbridge fixedposition="true" fixedorientation="true" orientation="north" northgate="true" northeastgate="true" southeastgate="true"/>
+		</position>
+		<position x="5" y="5">
+			<empty/>
+		</position>
+		<position x="6" y="5">
+			<empty/>
+		</position>
+		<position x="0" y="6">
+			<empty/>
+		</position>
+		<position x="1" y="6">
+			<empty/>
+		</position>
+		<position x="2" y="6">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="3" y="6">
+			<empty/>
+		</position>
+		<position x="4" y="6">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="5" y="6">
+			<empty/>
+		</position>
+		<position x="6" y="6">
+			<target fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container>
+		<splitter way="2" fixedposition="false" fixedorientation="false" orientation="southwest"/>
+		<splitter way="3" fixedposition="false" fixedorientation="false" orientation="northwest"/>
+		<splitter way="4" fixedposition="false" fixedorientation="false" orientation="northwest"/>
+		<splitter way="5" fixedposition="false" fixedorientation="false" orientation="northeast"/>
+	</container>
+</level>

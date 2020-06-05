@@ -1,0 +1,67 @@
+<level name="Rotation" map="g3_10.tmx" difficulty="medium" timer="120" color="false" intensity="false">
+	<grid width="5" height="4" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="0">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="0">
+			<gate fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="0">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="4" y="0">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="1">
+			<source fixedposition="true" fixedorientation="false" orientation="northeast"/>
+		</position>
+		<position x="1" y="1">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="1">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="1">
+			<mirror kind="2-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="4" y="1">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="2">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="2">
+			<gate fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="2">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="2">
+			<gate fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="4" y="2">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="3">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="3">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="3">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="3">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="4" y="3">
+			<target fixedposition="true" fixedorientation="false" orientation="southwest"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container/>
+</level>

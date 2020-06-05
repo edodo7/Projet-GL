@@ -1,0 +1,69 @@
+<level name="Discolored" map="g3_14.tmx" difficulty="hard" timer="180" color="true" intensity="true">
+	<grid width="5" height="5" fill="false"/>
+	<blocks>
+		<position x="2" y="0">
+			<empty/>
+		</position>
+		<position x="3" y="0">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="4" y="0">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="true" orientation="northwest"/>
+		</position>
+		<position x="1" y="1">
+			<empty/>
+		</position>
+		<position x="2" y="1">
+			<filter red="true" blue="false" green="true" fixedposition="true" fixedorientation="false"/>
+		</position>
+		<position x="3" y="1">
+			<empty/>
+		</position>
+		<position x="4" y="1">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="true" orientation="southwest"/>
+		</position>
+		<position x="1" y="2">
+			<mirror kind="1-way" fixedposition="true" fixedorientation="false" orientation="southeast"/>
+		</position>
+		<position x="2" y="2">
+			<specificbridge fixedposition="true" fixedorientation="true" orientation="north" northgate="red" northeastgate="green" southeastgate="red"/>
+		</position>
+		<position x="3" y="2">
+			<genericbridge fixedposition="true" fixedorientation="true" orientation="north" northgate="true" northeastgate="true" southeastgate="true"/>
+		</position>
+		<position x="4" y="2">
+			<empty/>
+		</position>
+		<position x="0" y="3">
+			<source fixedposition="true" fixedorientation="true" orientation="southeast" red="true" green="true" blue="true"/>
+		</position>
+		<position x="1" y="3">
+			<reducer fixedposition="true" fixedorientation="true" orientation="southeast"/>
+		</position>
+		<position x="2" y="3">
+			<filter red="false" blue="true" green="true" fixedposition="true" fixedorientation="false"/>
+		</position>
+		<position x="3" y="3">
+			<empty/>
+		</position>
+		<position x="4" y="3">
+			<target fixedposition="true" fixedorientation="true" orientation="southwest"/>
+		</position>
+		<position x="1" y="4">
+			<source fixedposition="true" fixedorientation="true" orientation="southeast" red="true" green="true" blue="true"/>
+		</position>
+		<position x="3" y="4">
+			<target fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container>
+		<converter color="red" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<amplifier fixedposition="false" fixedorientation="false" orientation="north"/>
+		<genericbridge fixedposition="false" fixedorientation="true" orientation="north" northgate="true" northeastgate="true" southeastgate="true"/>
+		<mirror kind="3-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="3-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="3-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+		<mirror kind="1-way" fixedposition="false" fixedorientation="false" orientation="north"/>
+	</container>
+</level>

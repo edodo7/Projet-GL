@@ -1,0 +1,82 @@
+<level name="Triangulation" map="g3_09.tmx" difficulty="medium" timer="60" color="false" intensity="false">
+	<grid width="5" height="5" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="northeast" red="true" green="true" blue="true"/>
+		</position>
+		<position x="1" y="0">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="0">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="0">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="4" y="0">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="1">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="1">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="2" y="1">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="3" y="1">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="4" y="1">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="2">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="2">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="2" y="2">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="3" y="2">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="4" y="2">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="northeast"/>
+		</position>
+		<position x="3" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="4" y="3">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="0" y="4">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="1" y="4">
+			<mirror kind="2-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="2" y="4">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="3" y="4">
+			<mirror kind="3-way" fixedposition="true" fixedorientation="false" orientation="north"/>
+		</position>
+		<position x="4" y="4">
+			<target fixedposition="true" fixedorientation="true" orientation="southwest"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container/>
+</level>

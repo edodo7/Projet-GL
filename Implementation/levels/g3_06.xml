@@ -1,0 +1,68 @@
+<level name="Collision" map="g3_06.tmx" difficulty="medium" timer="90" color="false" intensity="false">
+	<grid width="3" height="6" fill="false"/>
+	<blocks>
+		<position x="0" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="1" y="0">
+			<empty/>
+		</position>
+		<position x="2" y="0">
+			<source fixedposition="true" fixedorientation="true" orientation="north"/>
+		</position>
+		<position x="0" y="1">
+			<empty/>
+		</position>
+		<position x="1" y="1">
+			<empty/>
+		</position>
+		<position x="2" y="1">
+			<empty/>
+		</position>
+		<position x="0" y="2">
+			<wall fixedposition="true" fixedorientation="true"/>
+		</position>
+		<position x="1" y="2">
+			<empty/>
+		</position>
+		<position x="2" y="2">
+			<empty/>
+		</position>
+		<position x="0" y="3">
+			<empty/>
+		</position>
+		<position x="1" y="3">
+			<empty/>
+		</position>
+		<position x="2" y="3">
+			<empty/>
+		</position>
+		<position x="0" y="4">
+			<empty/>
+		</position>
+		<position x="1" y="4">
+			<wall fixedposition="true" fixedorientation="true"/>
+		</position>
+		<position x="2" y="4">
+			<empty/>
+		</position>
+		<position x="0" y="5">
+			<target fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+		<position x="1" y="5">
+			<empty/>
+		</position>
+		<position x="2" y="5">
+			<target fixedposition="true" fixedorientation="true" orientation="south"/>
+		</position>
+	</blocks>
+	<constraints/>
+	<container>
+		<splitter way="2" fixedposition="false" fixedorientation="false" orientation="south"/>
+		<splitter way="2" fixedposition="false" fixedorientation="false" orientation="south"/>
+		<splitter way="2" fixedposition="false" fixedorientation="false" orientation="south"/>
+		<splitter way="2" fixedposition="false" fixedorientation="false" orientation="south"/>
+		<gate fixedposition="false" fixedorientation="false" orientation="north"/>
+		<gate fixedposition="false" fixedorientation="false" orientation="north"/>
+	</container>
+</level>
